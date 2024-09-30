@@ -80,8 +80,8 @@ function frame() {
   if (!angVel && spinButtonClicked) {
     const finalSector = sectors[getIndex()];
     events.fire("spinEnd", finalSector);
-    // spinButtonClicked = false;  reset the flag
-   // return;
+     spinButtonClicked = false;  //reset the flag
+    return;
   }
 
   angVel *= friction; // Decrement velocity by friction
