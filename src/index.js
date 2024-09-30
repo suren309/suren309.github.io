@@ -77,7 +77,13 @@ function rotate() {
 
 function frame() {
   // Fire an event after the wheel has stopped spinning
+  
   if (!angVel && spinButtonClicked) {
+
+<div class="popup" onclick="myFunction()">Click me!
+  <span class="popuptext" id="myPopup">Popup text...</span>
+</div>
+  
     const finalSector = sectors[getIndex()];
     events.fire("spinEnd", finalSector);
      spinButtonClicked = false;  //reset the flag
