@@ -1,12 +1,12 @@
 const sectors = [
-  { color: "#704214", text: "#333333", label: "Dairy Milk" },
-  { color: "#FED8B1", text: "#333333", label: "Motichoor Laddu" },
-  { color: "#F67280", text: "#333333", label: "Momos" },
-  { color: "#01F9C6", text: "#333333", label: "French Fries" },
-  { color: "#C83F49", text: "#333333", label: "Pizza" },
-  { color: "#FF5A10", text: "#333333", label: "Five Star" },
-  { color: "#F08080", text: "#333333", label: "Aap khilaao muje" },
-  { color: "#7F525D", text: "#333333", label: "Burger" },
+  { color: "#B048B5", text: "#F5FFFA", label: "Dairy Milk" },
+  { color: "#FED8B1", text: "#F5FFFA", label: "Motichoor Laddu" },
+  { color: "#FFB2D0", text: "#F5FFFA", label: "Momos" },
+  { color: "#01F9C6", text: "#F5FFFA", label: "French Fries" },
+  { color: "#C83F49", text: "#F5FFFA", label: "Pizza" },
+  { color: "#FF5A10", text: "#F5FFFA", label: "Five Star" },
+  { color: "#F08080", text: "#F5FFFA", label: "Cold Coffee" },
+  { color: "#FF0080", text: "#F5FFFA", label: "Burger" },
 ];
 
 const events = {
