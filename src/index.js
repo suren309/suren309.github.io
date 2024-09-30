@@ -1,10 +1,10 @@
 const sectors = [
   { color: "#B048B5", text: "#F5FFFA", label: "Dairy Milk" },
-  { color: "#FED8B1", text: "#F5FFFA", label: "Motichoor Laddu" },
+  { color: "#FF5A10", text: "#F5FFFA", label: "Motichoor Laddu" },
   { color: "#FFB2D0", text: "#F5FFFA", label: "Momos" },
   { color: "#01F9C6", text: "#F5FFFA", label: "French Fries" },
   { color: "#C83F49", text: "#F5FFFA", label: "Pizza" },
-  { color: "#FF5A10", text: "#F5FFFA", label: "Five Star" },
+  { color: "#FDBD01", text: "#F5FFFA", label: "Five Star" },
   { color: "#F08080", text: "#F5FFFA", label: "Cold Coffee" },
   { color: "#FF0080", text: "#F5FFFA", label: "Burger" },
 ];
