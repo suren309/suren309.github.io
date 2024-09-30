@@ -80,7 +80,7 @@ function frame() {
   if (!angVel && spinButtonClicked) {
     const finalSector = sectors[getIndex()];
     events.fire("spinEnd", finalSector);
-    spinButtonClicked = false; // reset the flag
+    // spinButtonClicked = false;  reset the flag
     return;
   }
 
