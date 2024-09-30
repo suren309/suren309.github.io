@@ -88,7 +88,7 @@ function frame() {
   if (angVel < 0.002) angVel = 0; // Bring to stop
   ang += angVel; // Update angle
   ang %= TAU; // Normalize angle
-  rotate();
+  //rotate();
 }
 
 function engine() {
