@@ -80,9 +80,7 @@ function frame() {
   
   if (!angVel && spinButtonClicked) {
 
-<div class="popup" onclick="myFunction()">Click me!
-  <span class="popuptext" id="myPopup">Popup text...</span>
-</div>
+
   
     const finalSector = sectors[getIndex()];
     events.fire("spinEnd", finalSector);
