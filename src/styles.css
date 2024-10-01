@@ -44,7 +44,7 @@ body {
     0 0 0 8px currentColor,
     0 0px 15px 5px rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  transition: 0.8s ease-in-out;
+  transition: 0.8s ;
 }
 
 #spin::after {
