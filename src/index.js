@@ -113,5 +113,15 @@ function init() {
 init();
 
 events.addListener("spinEnd", (sector) => {
+
+  // Pass in the id of an element
+let confetti = new Confetti('demo');
+
+// Edit given parameters
+confetti.setCount(75);
+confetti.setSize(1);
+confetti.setPower(25);
+confetti.setFade(false);
+confetti.destroyTarget(true);
   console.log(`Woop! You won ${sector.label}`);
 });
