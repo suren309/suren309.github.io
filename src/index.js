@@ -1,3 +1,5 @@
+
+
 const sectors = [
   { color: "#B048B5", text: "#F5FFFA", label: "Dairy Milk" },
   { color: "#FF5A10", text: "#F5FFFA", label: "Motichoor Laddu" },
@@ -59,7 +61,7 @@ function drawSector(sector, i) {
   ctx.rotate(ang + arc / 2);
   ctx.textAlign = "right";
   ctx.fillStyle = sector.text;
-  ctx.font = "bold 30px 'Lato', sans-serif";
+  ctx.font = "bold 33px 'Lato', sans-serif";
   ctx.fillText(sector.label, rad - 10, 10);
   //
 
@@ -70,7 +72,7 @@ function rotate() {
   const sector = sectors[getIndex()];
   ctx.canvas.style.transform = `rotate(${ang - PI / 2}rad)`;
 
-  spinEl.textContent = !angVel ? "CHIYU" : sector.label;
+  spinEl.textContent = !angVel ? 'CHIYU' : sector.label;
   spinEl.style.background = sector.color;
   spinEl.style.color = sector.text;
 }
@@ -80,10 +82,10 @@ function frame() {
   
   if (!angVel && spinButtonClicked) {
 
-
   
     const finalSector = sectors[getIndex()];
     events.fire("spinEnd", finalSector);
+    
      spinButtonClicked = false;  //reset the flag
     return;
   }
@@ -114,6 +116,37 @@ init();
 
 events.addListener("spinEnd", (sector) => {
 
-  
-  console.log(`Woop! You won ${sector.label}`);
+const defaults = {
+  spread: 360,
+  ticks: 100,
+  gravity: 0,
+  decay: 0.94,
+  startVelocity: 30,
+  shapes: ["heart"],
+  colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"],
+};
+
+confetti({
+  ...defaults,
+  particleCount: 50,
+  scalar: 2,
 });
+
+confetti({
+  ...defaults,
+  particleCount: 25,
+  scalar: 3,
+});
+
+confetti({
+  ...defaults,
+  particleCount: 10,
+  scalar: 4,
+});
+
+
+Swal.fire(`Chiyu's Surprise Gift ${sector.label}`);
+console.log(`Woop! You won ${sector.label}`);
+});
+ 
+  
