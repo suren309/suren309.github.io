@@ -145,7 +145,7 @@ confetti({
 });
 
 
-Swal.fire(`Chiyu's Surprise Gift ${sector.label}`);
+Swal.fire(`Chiyu's Surprise Gift -- ${sector.label}`);
 console.log(`Woop! You won ${sector.label}`);
 });
  
