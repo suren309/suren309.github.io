@@ -72,8 +72,8 @@ function rotate() {
   const sector = sectors[getIndex()];
   ctx.canvas.style.transform = `rotate(${ang - PI / 2}rad)`;
 
-  spinEl.textContent = !angVel ? 'SPIN' : sector.label;
-  spinEl.style.background = !angVel ? '#3D0C02' : sector.color;
+  spinEl.textContent = !angVel ? 'CHIYU' : sector.label;
+  spinEl.style.background = !angVel ? '#5865F2' : sector.color;
   spinEl.style.color = sector.text;
 }
 
@@ -117,8 +117,9 @@ init();
 events.addListener("spinEnd", (sector) => {
 
 const defaults = {
+
   spread: 360,
-  ticks: 100,
+  ticks: 500,
   gravity: 0,
   decay: 0.94,
   startVelocity: 30,
@@ -144,8 +145,8 @@ confetti({
   scalar: 4,
 });
 
-
-Swal.fire(`Chiyu's Surprise Gift...  ${sector.label}`);
+Swal.fire (`Chiyu's Surprise Gift...  ${sector.label}`) ;
+sendEmail();
 console.log(`Woop! You won ${sector.label}`);
 });
  
