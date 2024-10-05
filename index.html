@@ -7,8 +7,14 @@
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
     </style>
     <link rel="stylesheet" href="src/styles.css" />
+  </head>
 
-<script defer src="src/index.js"></script>
+  <body>
+    <div id="spin_the_wheel">
+      <canvas id="wheel" width="800" height="800"></canvas>
+      <div id="spin">SPIN</div>
+    </div>
+    <script defer src="src/index.js"></script>
  
 <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 
@@ -19,40 +25,5 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.all.min.js
 https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css
 " rel="stylesheet">
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-  </head>
-
-  <body>
-    <div id="spin_the_wheel">
-      <canvas id="wheel" width="800" height="800"></canvas>
-      <div id="spin">SPIN</div>
-    </div>
-    
-
-
-
-
-<form method="post">
-      
-    </form>
-
-    <script type="text/javascript">
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "suru.link10@gmail.com",
-                Password: "Surendra@30",
-                To: 'suru.link10@gmail.com',
-                From: "suru.link10@gmail.com",
-                Subject: " ${sector.label}",
-                Body: "Well that was easy!!",
-            })
-                .then(function (message) {
-                   alert("mail sent successfully")
-                });
-        }
-    </script>
-
   </body>
 </html>
-
