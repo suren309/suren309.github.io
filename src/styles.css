@@ -51,7 +51,7 @@ body {
 
 #spin::after {
   content: "";
-  position: absolute;
+  position: absolute; 
   top: -17px;
   border: 10px solid transparent;
   border-bottom-color: currentColor;
