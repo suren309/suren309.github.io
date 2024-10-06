@@ -11,8 +11,8 @@ body {
   place-items: center;
   margin: 0;
   height: 100vh;
-  background: linear-gradient(to bottom, #FFCBA4, #DA70D6);
-  // background-image: url('imagee.gif');"
+ // background: linear-gradient(to bottom, #FFCBA4, #DA70D6);
+   background-image: url('imagee.png');"
 }
 
 #spin_the_wheel {
