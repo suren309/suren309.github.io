@@ -147,6 +147,36 @@ confetti({
 
 Swal.fire(`Chiyu's Surprise Gift...  ${sector.label}`);
 console.log(`Woop! You won ${sector.label}`);
+
+async function submitGoogleForm() {
+
+    const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdZU_5H5mI2BngCGiheFWLrzNAuLyks67CMSNQjVGI7HJSI-g/formResponse'; // Replace FORM_ID
+    const formData = new URLSearchParams();
+
+
+    formData.append('entry.1300023958', sector.label); // Replace with your input names and values
+    
+
+    try {
+        const response = await fetch(formURL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: formData,
+        });
+
+        console.log('Form submitted successfully!', response);
+    } catch (error) {
+        console.error('Error submitting form:', error);
+    }
+}
+
+// Call the function to submit the form
+submitGoogleForm();
+
+   
 });
  
   
