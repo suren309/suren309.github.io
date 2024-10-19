@@ -10,6 +10,25 @@
   </head>
 
   <body>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetch the IP address from the API
+            fetch("https://ipinfo.io/json") 
+                .then(response => response.json())
+                .then(data => {
+                    // Display the IP address on the screen
+                    document.getElementById("ip-address").textContent = 
+                          `IP Address: ${data.ip}`;
+                })
+                .catch(error => {
+                    console.error("Error fetching IP address:", error);
+                    document.getElementById("ip-address").textContent = 
+                          "Unable to retrieve IP address.";
+                });
+        });
+    </script>
+
     <div id="spin_the_wheel">
       <canvas id="wheel" width="800" height="800"></canvas>
       <div id="spin">SPIN</div>
